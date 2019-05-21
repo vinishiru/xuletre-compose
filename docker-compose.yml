@@ -1,7 +1,7 @@
 version: "3"
 services:
   webapp:
-    image: shirugaron/xuletre-webapp:1.0.0
+    image: shirugaron/xuletre-webapp:2.0.0
     deploy:
       replicas: 5
       restart_policy:
@@ -11,7 +11,7 @@ services:
     networks:
       - webnet
   monitorapp:
-    image: shirugaron/xuletre-monitor:1.0.0
+    image: shirugaron/xuletre-monitor:2.0.0
     deploy:
       replicas: 2
       resources:
@@ -21,7 +21,7 @@ services:
       restart_policy:
         condition: on-failure
     ports:
-      - "8090:8080"
+      - "8090:8090"
     networks:
       - webnet
 networks:
