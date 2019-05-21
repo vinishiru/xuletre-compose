@@ -13,7 +13,7 @@ services:
   monitorapp:
     image: shirugaron/xuletre-monitor:2.0.0
     deploy:
-      replicas: 2
+      mode: global
       resources:
         limits:
           cpus: "0.1"
