@@ -102,4 +102,6 @@ docker container ls
 #COMPOSE
 #mostrar arquivo YAML
 #subir stack da aplicação
+docker stack ls 
+docker stack deploy -c <composefile> <appname> #fazer deploy de um docker-compose.yml <nome>
 
